@@ -49,7 +49,7 @@ app.get("/weather", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     errorMessage: "Help article not found.",
-    title: "Error",
+    title: "404",
     name: "Daniel Bichuniak",
   });
 });
@@ -57,7 +57,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     errorMessage: "Page not found.",
-    title: "Error",
+    title: "404",
     name: "Daniel Bichuniak",
   });
 });
